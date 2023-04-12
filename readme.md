@@ -23,4 +23,4 @@
 ## 4. 참고 명령어
 
  - yolov7 모델 다운로드
-  wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+ - ```wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt```
