@@ -18,3 +18,9 @@
 ## 3. Flow Chart
 
  ![](https://velog.velcdn.com/images/johaun12/post/4392cc7b-8cce-4090-8cd0-1d0c664bbb0c/image.png)
+
+
+## 4. 참고 명령어
+
+ - yolov7 모델 다운로드
+  wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
