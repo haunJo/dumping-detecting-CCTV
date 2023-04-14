@@ -1,7 +1,10 @@
 import cv2
 import os
+import base64
+from time import localtime
+from time import strftime
 
-def get_video(path:str):
+def get_image(path:str):
     print(cv2.__version__)
     print(" ======= Parsing Video data is : ", path)
     if path:
@@ -25,20 +28,26 @@ def get_video(path:str):
     print("height :", height)
     print("fps :", fps, "\n")
 
+    currunt_time = localtime()
+    timestamp = strftime('%Y_%m_%d_%H', currunt_time)
     try:
-        if not os.path.exists(filepath[-10:-4]):
-            os.makedirs("data/images/"+filepath[-10:-4])
+        if not os.path.exists(timestamp):
+            os.makedirs("data/images/"+timestamp)
     except OSError:
-        print("Directory is already exists : " + filepath[-10:-4])
+        print("Directory is already exists : " + timestamp)
     
     count = 0
     
     while(video.isOpened()):
-        ret, frame = video.read()
-        if(int(video.get(1))% int(fps) == 0):
-            cv2.imwrite("data/images/" + filepath[-10:-4] + f"/{filepath[-10:-4]}%0d.jpg"% count, frame)
+        ret, img = video.read()
+        if(int(video.get(1)) % int(fps) == 0): # get an image for each seconds
+            tm = localtime()
+            capturedtime = strftime('%Y_%m_%d_%H%M%S', tm)
+            cv2.imwrite(f'images/{timestamp}/{capturedtime}{str(int(video.get(1)))}.jpg', img)
+            data = {"image": img, "filename" : f"{capturedtime}{str(int(video.get(1)))}"}
             print("Saved frame number:" , str(int(video.get(1))))
             count += 1
+            yield data
         if(ret == False):
             break
     video.release()
