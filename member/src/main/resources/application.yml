@@ -1,0 +1,33 @@
+server:
+  port: 8081
+
+# database 연동 설정
+#spring:
+#  datasource:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    #    각자 PC에 만들어놓은 Database이름을 써야 합니다.
+#    url: jdbc:mysql://localhost:3306/member_schema?createDatabaseIfNotExist=true&useUnicode=true&characterEncoding=UTF-8&characterSetResults=UTF-8&useSSL=true
+#    #    mysql에 생성한 사용자 계정 정보를 써야 합니다.
+#    username: member
+#    password: fpwjsem3206!
+#  thymeleaf:
+#    cache: false
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://ec2-43-201-101-246.ap-northeast-2.compute.amazonaws.com/SCV?serverTimezone=Asia/Seoul&characterEncoding=UTF-8
+    username: minseok
+    password: 1234
+  thymeleaf:
+    cache: false
+
+  # spring data jpa 설정
+  jpa:
+    database : mysql
+    show_sql : true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql : true

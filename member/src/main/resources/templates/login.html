@@ -1,0 +1,77 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>login</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>로그인 페이지</h1>-->
+<!--<form action="/member/login" method="post">-->
+<!--  아이디 : <input type="text" name="memberId"/> <br>-->
+<!--  비밀번호 : <input type="password" name="memberPassword"/> <br>-->
+<!--  <input type="submit" value="로그인">-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <style>
+        body {
+            background-color: #F2F2F2;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background-color: #FFF;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 0 auto;
+            width: 400px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            border: 1px solid #CCC;
+            border-radius: 3px;
+            font-size: 16px;
+            padding: 5px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            border: none;
+            border-radius: 3px;
+            color: #FFF;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<h1>로그인</h1>
+<form action="/member/login" method="post">
+    <label for="memberId">아이디 :</label>
+    <input type="text" id="memberId" name="memberId" required>
+    <label for="memberPassword">비밀번호 :</label>
+    <input type="password" id="memberPassword" name="memberPassword" required>
+    <input type="submit" value="로그인">
+</form>
+</body>
+</html>

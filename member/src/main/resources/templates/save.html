@@ -1,0 +1,91 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>save</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1>회원가입 페이지</h1>-->
+<!--&lt;!&ndash; action 속성: form에 작성한 데이터를 어디로 보낼지 지정 &ndash;&gt;-->
+<!--<form action="/member/save" method="post">-->
+<!--  &lt;!&ndash; name 속성 : 서버로 전송할 때 변수이름이ㅡ 역할&ndash;&gt;-->
+<!--    이메일: <input type="text" name="memberEmail" placeholder="****@****.com"> <br>-->
+<!--    아이디: <input type="text" name="memberId" placeholder="아이디 입력"> <br>-->
+<!--    비밀번호: <input type="password" name="memberPassword" placeholder="비밀번호 입력"> <br>-->
+<!--    이름: <input type="text" name="memberName" placeholder="이름 입력"> <br>-->
+<!--    핸드폰 번호: <input type="text" name="memberPhone" placeholder="010********"> <br>-->
+<!--    <br>-->
+<!--  <input type="submit" value="회원가입"/>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Save</title>
+    <style>
+        body {
+            background-color: #F2F2F2;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        form {
+            background-color: #FFF;
+            border: 1px solid #CCC;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 0 auto;
+            width: 400px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="password"] {
+            border: 1px solid #CCC;
+            border-radius: 3px;
+            font-size: 16px;
+            padding: 5px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            border: none;
+            border-radius: 3px;
+            color: #FFF;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<h1>회원가입</h1>
+<form action="/member/save" method="post">
+    <label for="memberId">아이디</label>
+    <input type="text" id="memberId" name="memberId" placeholder="아이디 입력" required>
+    <label for="memberPassword">비밀번호</label>
+    <input type="password" id="memberPassword" name="memberPassword" placeholder="비밀번호 입력" required>
+    <label for="memberName">이름</label>
+    <input type="text" id="memberName" name="memberName" placeholder="이름 입력" required>
+    <label for="memberPhone">핸드폰 번호</label>
+    <input type="text" id="memberPhone" name="memberPhone" placeholder="010********" required>
+    <label for="memberEmail">이메일</label>
+    <input type="text" id="memberEmail" name="memberEmail" placeholder="****@****.com" required>
+    <label>인증하기</label>
+    <input type="file" multiple="multiple" id="cctvCertification" name="cctvCertification">
+    <input type="submit" value="회원가입">
+</form>
+</body>
+</html>

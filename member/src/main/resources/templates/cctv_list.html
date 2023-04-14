@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cctv_list</title>
+  <style>
+    body {
+      background-color: #F2F2F2;
+      font-family: Arial, sans-serif;
+    }
+
+    h2 {
+      color: #333;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<h2>내 CCTV</h2>
+<table>
+  <tr th:each="cctv: ${cctvList}">
+    <td th:text="${cctv.getCctvAlias()}"></td>
+    <td>
+      <button type="button" onclick="location.href='cctv_check.html'">조회</button>
+    </td>
+    <td>
+      <button>삭제</button>
+    </td>
+  </tr>
+</table>
+</body>
+</html>
