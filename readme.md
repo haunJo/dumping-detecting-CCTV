@@ -19,7 +19,7 @@
 
 ![](https://velog.velcdn.com/images/johaun12/post/4392cc7b-8cce-4090-8cd0-1d0c664bbb0c/image.png)
 ![](https://github.com/haunJo/dumping-detecting-CCTV/assets/89852760/7af40a84-73b7-4704-b9cd-d3cde680c615)
-![](https://github.com/haunJo/dumping-detecting-CCTV/files/11460292/drawio.6.pdf)
+<img width="807" alt="image" src="https://github.com/haunJo/dumping-detecting-CCTV/assets/89852760/92a28c10-64fb-4095-a946-9e27ee6d94af">
 
 
 
