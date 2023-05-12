@@ -18,9 +18,8 @@
 ## 3. Flow Chart
 
 ![](https://velog.velcdn.com/images/johaun12/post/4392cc7b-8cce-4090-8cd0-1d0c664bbb0c/image.png)
-[제목 없는 다이어그램 drawio (2)](https://github.com/haunJo/dumping-detecting-CCTV/assets/89852760/7af40a84-73b7-4704-b9cd-d3cde680c615)
-
-[제목 없는 다이어그램.drawio (6).pdf](https://github.com/haunJo/dumping-detecting-CCTV/files/11460292/drawio.6.pdf)
+![](https://github.com/haunJo/dumping-detecting-CCTV/assets/89852760/7af40a84-73b7-4704-b9cd-d3cde680c615)
+![](https://github.com/haunJo/dumping-detecting-CCTV/files/11460292/drawio.6.pdf)
 
 
 
