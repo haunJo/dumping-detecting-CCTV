@@ -40,7 +40,7 @@ def get_image(path:str):
     
     while(video.isOpened()):
         ret, img = video.read()
-        if(int(video.get(1)) % int(fps) == 0): # get an image for each seconds
+        if(int(video.get(1)) % int(fps//2) == 0): # get an image for each seconds
             tm = localtime()
             capturedtime = strftime('%Y_%m_%d_%H%M%S', tm)
             cv2.imwrite(f'images/{timestamp}/{capturedtime}{str(int(video.get(1)))}.jpg', img)
