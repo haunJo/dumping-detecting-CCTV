@@ -9,4 +9,5 @@ data/video/*
 *.ipynb
 *.mp4
 *.avi
+.DS_Store
 
